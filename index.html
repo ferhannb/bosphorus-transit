@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07131e">
+  <meta name="description" content="Recorded closed-loop DD-NMPC simulation of a Panamax vessel transiting the Bosphorus northbound.">
+  <title>Autonomous Bosphorus Transit: Simulation | Ferhan Büyükçolak</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#e9f1f7;background:#07131e}
+    body{margin:0}main{max-width:1180px;margin:auto;padding:36px}a{color:#65f5d6}
+    h1{font-size:clamp(30px,4vw,43px);letter-spacing:-.04em;margin:12px 0}p{color:#b1c4d0;line-height:1.75}
+    .tag{font-size:11px;letter-spacing:.2em;font-weight:750;color:#55e6cb;text-transform:uppercase}
+    .credits{font-size:13px;color:#8fa9b6}
+    video{display:block;width:100%;height:auto;border:1px solid #345364;border-radius:12px;background:#000;margin:22px 0}
+  </style>
+</head>
+<body>
+  <main>
+    <a href="https://ferhannb.github.io/">← Ferhan Büyükçolak</a><br><br>
+    <span class="tag">Recorded closed-loop simulation</span>
+    <h1>Autonomous Bosphorus Transit</h1>
+    <video controls playsinline preload="metadata" poster="poster.jpg" width="1920" height="1080">
+      <source src="bosphorus_transit.mp4" type="video/mp4">
+      <a href="bosphorus_transit.mp4">Download the video</a>
+    </video>
+    <p>A compact Panamax manoeuvring model follows the northbound Bosphorus corridor under closed-loop distance-domain NMPC. The video is rendered from one recorded run; displayed values come from that run.</p>
+    <p>This is a simulation with zero current and no measurement noise. Controller and simulated plant use the same compact model, which is not validated at ship scale. Waves are visual and do not affect the vessel model. Shore distance is measured from the vessel centreline; hull footprint and under-keel clearance are not checked.</p>
+    <p class="credits">Contains modified Copernicus Sentinel data 2026. Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA; all rights reserved. Coastline and traffic separation data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, available under the Open Database License. Rendered with <a href="https://github.com/markaren/threepp">threepp</a>.</p>
+  </main>
+</body>
+</html>
